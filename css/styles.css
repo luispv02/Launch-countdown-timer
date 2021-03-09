@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  background-color: #191a24;
+  background-image: url(../images/bg-stars.svg);
+  background-position: center;
+  background-size: cover;
+  z-index: 999;
+}
+
+header {
+  background-image: url(../images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  background-size: 338% 31%;
+  z-index: 0;
+}
+
+header .header-content {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-content h1 {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: -125px;
+}
+
+header .header-content .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+header .header-content .time .timer {
+  width: 120px;
+  height: auto;
+}
+
+header .header-content .time .timer p {
+  color: #fb6087;
+  font-size: 2rem;
+  border-radius: 10px;
+  background: #343650;
+  margin: 0 5px 5px 5px;
+  padding: 10px 10px;
+}
+
+header .header-content .time .timer span {
+  margin: 0 20px;
+  color: #8486a9;
+  font-size: .7rem;
+}
+
+header .header-content .icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -160%);
+          transform: translate(-50%, -160%);
+}
+
+header .header-content .icons img {
+  margin: 0px 12px;
+}
+
+header .header-content .icons img:hover {
+  -webkit-filter: invert(50%) sepia(34%) saturate(1288%) hue-rotate(300deg) brightness(101%) contrast(96%);
+          filter: invert(50%) sepia(34%) saturate(1288%) hue-rotate(300deg) brightness(101%) contrast(96%);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  header .header-content h1 br {
+    display: none;
+  }
+  header .header-content .time {
+    margin-top: 110px;
+  }
+  header .header-content .time .timer {
+    width: 10%;
+    height: auto;
+    margin: 0 10px;
+  }
+  header .header-content .time .timer p {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  header .header-content .time .timer span {
+    font-size: 1rem;
+  }
+  header {
+    background-image: url(../images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 150px;
+    z-index: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
